@@ -1,16 +1,22 @@
-document.getElementById('log').addEventListener('click', function() {
-    let Enter = document.getElementById('Enter').value;
-    let amount = document.getElementById('amount').value;
+document.getElementById('log').addEventListener('click', function(event) {
+    event.preventDefault();
     let pin = document.getElementById('pin').value;
 
-    if (Enter.length !== 11 || isNaN(Enter)) {
-        alert('Please enter a valid 11-digit number');
-    }
+    const convertedPin = parseInt(pin);
+    const amount = document.getElementById('amount').value;
+    const convertedAmount = parseInt(amount);
+    const main = document.getElementById('main').innerText
+    const conMain = parseFloat(main);
 
-    if(amount === ""){
-        alert('Please add an amount')
-    }
-    if(pin === ""){
-        alert('Please enter a valid 4-digit number')
+
+    if (amount) {
+        if (pin.length === 4) {
+            const sum = conMain + convertedAmount
+            document.getElementById('main').innerText=sum
+        } else {
+            alert('Enter valid pin');
+        }
+    } else {
+        alert('Enter amount');
     }
 });

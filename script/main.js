@@ -3,6 +3,14 @@ document.getElementById('showFormBtn').addEventListener('click', function() {
     container.style.display = 'none';
     const containerr = document.getElementById('add');
     containerr.style.display = 'block';
+    const containerrr = document.getElementById('cash');
+    containerrr.style.display = 'none';
+    const containerrrr = document.getElementById('transfe');
+    containerrrr.style.display = 'none';
+    const containerrrrr = document.getElementById('bonu');
+    containerrrrr.style.display = 'none';
+    const containerrrrrr = document.getElementById('pa');
+    containerrrrrr.style.display = 'none';
 });
 document.getElementById('cashout').addEventListener('click', function() {
     const container = document.getElementById('sec1');
@@ -11,6 +19,12 @@ document.getElementById('cashout').addEventListener('click', function() {
     containerr.style.display = 'none';
     const containerrr = document.getElementById('cash');
     containerrr.style.display = 'block';
+    const containerrrr = document.getElementById('transfe');
+    containerrrr.style.display = 'none';
+    const containerrrrr = document.getElementById('bonu');
+    containerrrrr.style.display = 'none';
+    const containerrrrrr = document.getElementById('pa');
+    containerrrrrr.style.display = 'none';
 });
 document.getElementById('Transfer').addEventListener('click', function() {
     const container = document.getElementById('sec1');
@@ -21,6 +35,10 @@ document.getElementById('Transfer').addEventListener('click', function() {
     containerrr.style.display = 'none';
     const containerrrr = document.getElementById('transfe');
     containerrrr.style.display = 'block';
+    const containerrrrr = document.getElementById('bonu');
+    containerrrrr.style.display = 'none';
+    const containerrrrrr = document.getElementById('pa');
+    containerrrrrr.style.display = 'none';
 });
 document.getElementById('bonus').addEventListener('click', function() {
     const container = document.getElementById('sec1');
@@ -33,6 +51,8 @@ document.getElementById('bonus').addEventListener('click', function() {
     containerrrr.style.display = 'none';
     const containerrrrr = document.getElementById('bonu');
     containerrrrr.style.display = 'block';
+    const containerrrrrr = document.getElementById('pa');
+    containerrrrrr.style.display = 'none';
 });
 document.getElementById('Pay').addEventListener('click', function() {
     const container = document.getElementById('sec1');
